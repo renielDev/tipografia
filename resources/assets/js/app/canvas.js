@@ -2,7 +2,6 @@
   require('./../lib/colorpicker');
 
   function initFonts(data) {
-    alert('x');
     var _data = JSON.parse(data);
     console.log(_data);
     WebFont.load({
@@ -59,6 +58,14 @@
     download(canvas.toDataURL(),name+'.png');
   }
 
+  $('body').on('click', '.remove',function() {
+    if(canvas.getActiveGroup()){
+      canvas.getActiveGroup().forEachObject(function(o){ canvas.remove(o) });
+      canvas.discardActiveGroup().renderAll();
+    } else {
+      canvas.remove(canvas.getActiveObject());
+    }
+  });
   $('body').on('click', '.download', function(){
     downloadFabric(canvas,'downlad');
   });

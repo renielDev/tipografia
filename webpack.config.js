@@ -4,7 +4,7 @@ var PROD = JSON.parse(process.env.PROD_DEV || "0");
 PROD = 0;
 module.exports = {
 	entry: {
-		a: './resources/assets/js/entry.js'
+		app: './resources/assets/js/entry.js'
 	},
 	output: {
 		path: './public/assets/js',

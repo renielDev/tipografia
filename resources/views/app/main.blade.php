@@ -17,7 +17,7 @@
           <ul class="list-unstyled list-inline text-center">
             <li><a href="#">Welcome!</a></li>
             <li><a href="#">About</a></li>
-            <li class="tipografia">Tipografia</li>
+            <li class="tipografia"><h1>Tipografia</h1></li>
             <li><a href="#">Type+</a></li>
             <li><a href="#">Credits</a></li>
           </ul>
@@ -30,33 +30,33 @@
         <li class="active">
           <ul class="list-unstyled list-inline sub-menu">
             <li class="active">
-              <img src="/assets/images/holiday/NY.png" class="img-responsive" alt="" />
+              <img src="/assets/images/holiday/new_year.png" class="img-responsive" alt="" />
               <span>
-                Sample 1
+                New Year
               </span>
             </li>
             <li>
-              <img src="/assets/images/holiday/NY.png" class="img-responsive" alt="" />
+              <img src="/assets/images/holiday/valentines.png" class="img-responsive" alt="" />
               <span>
-                Sample 1
+                Valentines
               </span>
             </li>
             <li>
-              <img src="/assets/images/holiday/NY.png" class="img-responsive" alt="" />
+              <img src="/assets/images/holiday/easter.png" class="img-responsive" alt="" />
               <span>
-                Sample 1
+                Easter
               </span>
             </li>
             <li>
-              <img src="/assets/images/holiday/NY.png" class="img-responsive" alt="" />
+              <img src="/assets/images/holiday/halloween.png" class="img-responsive" alt="" />
               <span>
-                Sample 1
+                Halloween
               </span>
             </li>
             <li>
-              <img src="/assets/images/holiday/NY.png" class="img-responsive" alt="" />
+              <img src="/assets/images/holiday/christmas.png" class="img-responsive" alt="" />
               <span>
-                Sample 1
+               Christmas
               </span>
             </li>
           </ul>
@@ -150,7 +150,7 @@
     <div class="clear-both container">
       <section class="section">
         <ul class="col-md-10 col-md-offset-1 menu list-unstyled list-inline text-center">
-          <li class="col-md-4">
+          <li class="col-md-4 active">
             Moods <br />
             & emotions
           </li>
@@ -158,7 +158,7 @@
             Special <br />
             occasions
           </li>
-          <li class="col-md-4 active">
+          <li class="col-md-4">
             Worldwide <br />
             holidays
           </li>
@@ -167,74 +167,121 @@
       </section>
     </div>
     <section class="container__canvas">
+      <span class="canvas-tools left">
+        <button type="button" title="Remove selected element(s)" class="btn remove">
+          <span class="glyphicon glyphicon-minus"></span>
+        </button>
+      </span>
       <span class="canvas-tools">
-        <button type="button" class="btn btn-default" name="button">
+        <label for="uploadImg" title="Add image">
           <span class="glyphicon glyphicon-plus"></span>
-        </button>
-        <button type="button" class="btn btn-default" name="button"></button>
-        <button type="button" class="btn btn-default" name="button"></button>
-        <button type="button" class="btn btn-default" name="button">
-          <span class="vertical-line"></span>
-        </button>
+        </label>
+        <input type="file" id="uploadImg" class="uploadFile"></input>
+        <span class="canvas-color-picker color-picker">
+          <input type="hidden" value="#999999" class="picker-color" />
+          <span class="btn btn-default add-on" title="Background color"></span>
+        </span>
+        <button type="button" class="btn btn-default no-bg" title="Remove Background Color" name="button"></button>
       </span>
       <span class="canvas-tools bottom">
         <button type="button" class="btn btn-default" name="button">
           <i class="fa fa-share-alt"></i>
         </button>
-        <button type="button" class="btn btn-default" name="button">
+        <button type="button" class="btn btn-default download" name="button">
           <span class="glyphicon glyphicon-download-alt"></span>
         </button>
       </span>
       <canvas id="canvas"></canvas>
     </section>
-    <div class="container canvas__form">
-      <label for="someText">Type here</label>
-      <input type="text" name="someText" value="" class="canvas-text">
-      <div class="input-group canvas-color-picker">
-        <input type="hidden" value="" class="form-control" />
-        <span class="input-group-addon"><i></i></span>
+    <section class="section">
+      <div class="container canvas__form">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="col-md-6 form-group">
+            <label for="someText">Type here</label>
+            <input type="text" name="someText" value="" class="form-control canvas-text" />
+            <i title="Add text" class="fa fa-plus add-text"></i>
+          </div>
+          <div class="col-md-4 form-group font-color-picker color-picker">
+            <label for="someText">Font Color</label>
+            <input type="hidden" value="#333333" class="picker-color" />
+            <span class="form-control input-group-addon"></span>
+          </div>
+        </div>
       </div>
-      <button type="button" name="addText" class="add-text">Add text</button>
-      <button type="button" name="button" class="download">Download</button>
-      <input type="text" name="name" value="" class="fonts">
-      <button type="button" name="button" class="load-fonts">Init fonts</button>
-      <button type="button" name="button" class="remove">remove</button>
-    </div>
+    </section>
 
     <section class="fonts-list">
       <ul class="list-unstyled">
         <li>
           <div>
-            <span>Clemente by  Allan Prescott</span>
-            <span>in Moods > Happy</span>
+            <span><strong>Clemente</strong> by  Allan Prescott</span>
+            <span>in <strong>Moods > Happy</strong></span>
           </div>
           <div>
-            <span>Clemente</span>
-            <span>
-              <button type="button" name="button" class="btn btn-default">Download</button>
-              <button type="button" name="button" class="btn btn-default">Select</button>
-            </span>
+            <div class="row">
+              <span class="col-md-9">Clemente</span>
+              <span class="col-md-3 text-right">
+                  <button type="button" name="button" class="btn btn-default">Download</button>
+                  <button type="button" name="button" class="btn btn-default">Select</button>
+              </span>
+              <span class="clear-both"></span>
+            </div>
           </div>
         </li>
         <li>
           <div>
-            <span>Clemente by  Allan Prescott</span>
-            <span>in Moods > Happy</span>
+            <span><strong>Clemente</strong> by  Allan Prescott</span>
+            <span>in <strong>Moods > Happy</strong></span>
           </div>
           <div>
-            <span>Clemente</span>
-            <span>
-              <button type="button" name="button" class="btn btn-default">Download</button>
-              <button type="button" name="button" class="btn btn-default">Select</button>
-            </span>
+            <div class="row">
+              <span class="col-md-9">Clemente</span>
+              <span class="col-md-3 text-right">
+                  <button type="button" name="button" class="btn btn-default">Download</button>
+                  <button type="button" name="button" class="btn btn-default">Select</button>
+              </span>
+              <span class="clear-both"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span><strong>Clemente</strong> by  Allan Prescott</span>
+            <span>in <strong>Moods > Happy</strong></span>
+          </div>
+          <div>
+            <div class="row">
+              <span class="col-md-9">Clemente</span>
+              <span class="col-md-3 text-right">
+                  <button type="button" name="button" class="btn btn-default">Download</button>
+                  <button type="button" name="button" class="btn btn-default">Select</button>
+              </span>
+              <span class="clear-both"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span><strong>Clemente</strong> by  Allan Prescott</span>
+            <span>in <strong>Moods > Happy</strong></span>
+          </div>
+          <div>
+            <div class="row">
+              <span class="col-md-9">Clemente</span>
+              <span class="col-md-3 text-right">
+                  <button type="button" name="button" class="btn btn-default">Download</button>
+                  <button type="button" name="button" class="btn btn-default">Select</button>
+              </span>
+              <span class="clear-both"></span>
+            </div>
           </div>
         </li>
       </ul>
     </section>
     <footer>
-      <section class="container text-center">
+      <section class="section container text-center">
         <div>
-          2016 All rights reserved Nicole Castaneda
+          2016 All rights reserved <strong>Nicole Castaneda</strong>
         </div>
         <div>
           Developer: <strong>Reniel Salvador</strong>

@@ -39,13 +39,49 @@
     // canvas.setBackgroundColor('red', canvas.renderAll.bind(canvas));
     canvas.add(new fabric.IText(txt, {
       fontFamily: txt,
+      fill: $('.canvas__form .picker-color').val(),
       top : canvas.height / 4,
       left : canvas.width / 4,
     }));
   });
 
-  $('.canvas-color-picker').colorpicker().on('changeColor.colorpicker', function(e){
-    canvas.setBackgroundColor(e.color.toHex(), canvas.renderAll.bind(canvas))
+  $('.font-color-picker')
+    .colorpicker({
+      'input' : '.picker-color'
+    });
+
+  $('.canvas-color-picker')
+    .colorpicker({
+      'input' : '.picker-color'
+    })
+    .on('changeColor.colorpicker', function(e){
+      canvas.setBackgroundColor(e.color.toHex(), canvas.renderAll.bind(canvas));
+    });
+
+  $('body').on('click', '.canvas-tools .no-bg', function(){
+    canvas.setBackgroundColor(null, canvas.renderAll.bind(canvas));
+  });
+
+  $('body').on('change','.canvas-tools .uploadFile',function(e) {
+    var reader = new FileReader();
+    reader.onload = function (event){
+      var imgObj = new Image();
+      imgObj.src = event.target.result;
+      imgObj.onload = function () {
+        var image = new fabric.Image(imgObj);
+        image.set({
+              angle: 0,
+              padding: 10,
+              cornersize:10,
+              height:110,
+              width:110,
+        });
+        canvas.centerObject(image);
+        canvas.add(image);
+        canvas.renderAll();
+      }
+    }
+    reader.readAsDataURL(e.target.files[0]);
   });
 
   function download(url,name){

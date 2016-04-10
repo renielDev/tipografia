@@ -5758,7 +5758,7 @@ button.close {
   src: url(/assets/fonts/antraste.ttf); }
 
 @font-face {
-  font-family: arial;
+  font-family: my-arial;
   src: url(/assets/fonts/arial.ttf); }
 
 @font-face {
@@ -5829,6 +5829,22 @@ button.close {
   font-family: mj;
   src: url(/assets/fonts/mj-alghifari-demo.ttf); }
 
+@font-face {
+  font-family: aparaj;
+  src: url(/assets/fonts/aparaj.ttf); }
+
+@font-face {
+  font-family: aparajb;
+  src: url(/assets/fonts/aparajb.ttf); }
+
+@font-face {
+  font-family: aparajbi;
+  src: url(/assets/fonts/aparajbi.ttf); }
+
+@font-face {
+  font-family: aparaji;
+  src: url(/assets/fonts/aparaji.ttf); }
+
 body {
   font-family: antraste; }
 
@@ -5867,12 +5883,15 @@ nav.navigator li:not(.tipografia) {
 
 nav.navigator li a {
   color: #2D2A2B;
-  padding: 10px; }
+  padding: 10px;
+  transition: border-color .5s;
+  border: 2px solid;
+  border-color: rgba(255, 209, 1, 0); }
 
 nav.navigator li a:hover,
 nav.navigator li a:focus {
   text-decoration: none;
-  border: 2px solid #FFD101; }
+  border-color: rgba(255, 209, 1, 0.99); }
 
 .section {
   padding: 40px 0; }
@@ -5888,14 +5907,17 @@ nav.navigator li a:focus {
 .menu-list > li.active {
   display: block; }
 
+.menu-list .sub-menu {
+  font-size: 0; }
+
 .menu-list .sub-menu li {
   width: 20%;
   padding: 0;
   box-sizing: border-box;
   padding: 20px;
   min-height: 350px;
-  float: left;
   background-color: #2D2A2B;
+  transition: background .5s;
   position: relative;
   color: white; }
 
@@ -5925,10 +5947,12 @@ nav.navigator li a:focus {
 .menu li {
   padding: 10px 5px 0;
   position: relative;
-  font-family: 'arial';
+  font-family: 'my-arial';
   font-weight: 600;
   font-size: 17px;
-  line-height: 16px; }
+  line-height: 16px;
+  cursor: pointer;
+  cursor: hand; }
 
 .menu li:before {
   font-family: 'arial';
@@ -5956,6 +5980,150 @@ nav.navigator li a:focus {
   height: 8px; }
 
 .container__canvas {
-  background-color: #E6E6E6; }
+  background-color: #E6E6E6;
+  position: relative; }
+
+.container__canvas .canvas-tools {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 1; }
+
+.container__canvas .canvas-tools.bottom {
+  top: inherit;
+  bottom: 10px; }
+
+.container__canvas .canvas-tools.left {
+  right: inherit;
+  left: 10px; }
+
+.canvas-tools label,
+.canvas-tools .btn {
+  height: 21px;
+  width: 21px;
+  padding: 0;
+  font-size: 10px;
+  background: #808080;
+  border: 1px solid white;
+  color: white;
+  opacity: 1;
+  transition: opacity .2s;
+  margin: 0;
+  vertical-align: bottom;
+  border-radius: 4px; }
+
+.canvas-tools label span {
+  margin-left: 5px;
+  margin-top: 3px; }
+
+.canvas-tools .btn.no-bg {
+  background: white; }
+
+.canvas-tools .btn.no-bg:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: red;
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  top: 0; }
+
+.canvas-tools .btn.remove {
+  background: #C1272D; }
+
+.canvas-tools label:hover,
+.canvas-tools .btn:hover {
+  opacity: .8; }
+
+.canvas-tools.bottom .btn {
+  background: none;
+  border-color: #2D2A2B;
+  color: #2D2A2B; }
+
+.canvas__form .canvas-text {
+  border-radius: 0;
+  box-shadow: none;
+  font-family: 'arial'; }
+
+.canvas__form .color-picker .form-control {
+  border: 1px solid #CCCCCC;
+  width: 40px;
+  border-radius: 0;
+  box-shadow: none; }
+
+.canvas-tools #uploadImg {
+  display: none; }
+
+.canvas__form .add-text {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+  opacity: 1;
+  transition: opacity 1s; }
+
+.canvas__form .add-text:hover {
+  opacity: .8; }
+
+.canvas__form label {
+  font-size: 11px;
+  margin-bottom: 10px;
+  letter-spacing: 2px; }
+
+.fonts-list {
+  min-height: 400px;
+  background-color: #F2F2F2; }
+
+.fonts-list li > div:last-child {
+  padding: 30px; }
+
+.fonts-list li div:last-child span:nth-child(2) {
+  padding-top: 15px; }
+
+.fonts-list li div:last-child .btn {
+  border-radius: 15px;
+  background: none;
+  border-color: #333;
+  font-size: 9px;
+  width: 110px; }
+
+.fonts-list li div:last-child .btn:hover {
+  background: #333;
+  color: white; }
+
+.fonts-list li div:last-child span:first-child {
+  font-size: 40px; }
+
+.fonts-list li div:last-child span:nth-child(2) .btn:last-child {
+  margin-left: 15px; }
+
+.fonts-list li > div:first-child {
+  padding: 10px;
+  background-color: #4D4D4D;
+  color: white;
+  font-family: 'my-arial';
+  font-size: 10px; }
+
+.fonts-list li > div:first-child span:last-child {
+  float: right; }
+
+.fonts-list ul {
+  overflow-y: scroll;
+  height: 400px; }
+
+.fonts-list ul::-webkit-scrollbar-track {
+  background-color: #CCCCCC; }
+
+.fonts-list ul::-webkit-scrollbar {
+  width: 10px;
+  background-color: #CCCCCC; }
+
+.fonts-list ul::-webkit-scrollbar-thumb {
+  background-color: #2D2A2B; }
+
+footer {
+  font-family: 'aparaji';
+  font-size: 20px;
+  line-height: 19px; }
 
 /*# sourceMappingURL=app.css.map */

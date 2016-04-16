@@ -1,0 +1,275 @@
+.navigator {
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: right;
+
+  & span {
+    opacity: 1;
+    transition: all .3s;
+  }
+  & span:hover {
+    opacity: .8;
+  }
+}
+
+.pg-home {
+  margin-top: 50px;
+}
+
+section {
+  &.page--block {
+    min-height: 650px;
+    position: relative;
+    height: 100%;
+    padding: 30px 0px;
+  }
+  & .group {
+    position: absolute;
+  }
+  & .tipografia .back--elmnt {
+    position: relative;
+    left: calc(50% - 170px);
+  }
+  & .tipografia .front--elmnt {
+    position: absolute;
+  }
+
+  & .what-is {
+    & .back--elmnt {
+      text-align: right;
+    }
+    & .front--elmnt {
+      position: absolute;
+      top: -50px;
+      font-family: 'abrilfat';
+      text-align: center;
+      font-size: 50px;
+      left: -130px;
+      line-height: 45px;
+    }
+  }
+
+  & .how-is {
+    & .front--elmnt {
+      position: absolute;
+      bottom: -30px;
+      font-family: 'abrilfat';
+      text-align: center;
+      font-size: 50px;
+      left: -40px;
+      line-height: 45px;
+      width: 450px;
+    }
+  }
+
+  & .start-typing {
+    & .front--elmnt {
+      position: absolute;
+      bottom: -30px;
+      font-family: 'abrilfat';
+      text-align: center;
+      font-size: 50px;
+      right: -70px;
+      line-height: 45px;
+      width: 450px;
+    }
+  }
+
+}
+
+.back--elmnt {
+  font-family: 'Antraste';
+  color: #FFD101;
+  font-size: 110px;
+  line-height: 67px;
+  letter-spacing: 0px;
+}
+
+  .g0 {
+    height: 250px;
+    width: 100%;
+    & .front--elmnt {
+      height: 220px;;
+    }
+  }
+
+.splitter {
+  display:block;
+}
+
+// positions
+.center-center {
+  top:0;
+  left: 0;
+  right:0;
+  bottom:0;
+  margin:auto;
+}
+
+.bottom-right {
+  right: 0;
+  bottom: 30px;
+  margin: auto;
+}
+
+.bottom-left {
+  left: 30px;
+  bottom: 80px;
+  margin: auto;
+}
+
+.center-left {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100px;
+}
+
+.center-right {
+  top: 0;
+  bottom: 0;
+  right: 60px;
+  margin: auto;
+  height: 100px;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: aparajbi;
+  font-size: 18px;
+}
+
+.group.what .front--elmnt {
+  font-family: aparajbi;
+  right: -40px;
+  position: absolute;
+  font-size: 22px;
+  bottom: -27px;
+  line-height: 23px;
+  max-width: 300px;
+}
+
+.img-container {
+  height: 40px;
+  position: relative;
+
+  & img {
+    height: 100%;
+    &.center {
+      margin:auto;
+    }
+  }
+}
+
+.hand.img-container {
+  height: 120px;
+}
+
+.scroll-up-down {
+  position: absolute;
+  left: -50px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 150px;
+
+  & .img-container:last-child  {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.developers {
+  h2 {
+    font-family: 'Antraste';
+    color: #FFD101;
+    font-size: 70px;
+    line-height: 67px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    & .creator-title {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      bottom: 0;
+      left: calc(50% - 60px);
+      right: 0;
+      margin: auto;
+      font-family: 'abrilfat';
+      font-size: 40px;
+      color: #333333;
+      line-height: 30px;
+      height: 60px;
+      transform: translate(30px,10px);
+      text-align: left;
+    }
+  }
+
+  & .avatar-img {
+    margin-bottom: 20px;
+  }
+
+  & .personal-info {
+    text-align: center;
+
+    & .position {
+      font-size: 50px;
+      font-family: 'abrilfat';
+      color: #FFD101;
+    }
+
+    & .email {
+      font-family: aparaji;
+      border-radius: 0;
+      color: #333333;
+      border-color: #333333;
+      font-size: 20px;
+      padding: 10px 40px;
+    }
+  }
+
+  & .accounts li {
+    width: 40px;
+    height: 40px;
+    background: #353334;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 10px;
+    opacity: 1;
+    transition: all .3s;
+    border: 1px solid #333333;
+
+    &:hover {
+      background: white;
+      color: #333333;
+
+      & a {
+        color: #333333;
+      }
+    }
+
+    & i {
+      vertical-align: middle ;
+    }
+
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+}
+
+
+
+.mt20 {
+  margin-top: 20px;
+}

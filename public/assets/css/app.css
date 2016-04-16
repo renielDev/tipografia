@@ -6126,4 +6126,219 @@ footer {
   font-size: 20px;
   line-height: 19px; }
 
+.navigator {
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: right; }
+  .navigator span {
+    opacity: 1;
+    transition: all .3s; }
+  .navigator span:hover {
+    opacity: .8; }
+
+.pg-home {
+  margin-top: 50px; }
+
+section.page--block {
+  min-height: 650px;
+  position: relative;
+  height: 100%;
+  padding: 30px 0px; }
+
+section .group {
+  position: absolute; }
+
+section .tipografia .back--elmnt {
+  position: relative;
+  left: calc(50% - 170px); }
+
+section .tipografia .front--elmnt {
+  position: absolute; }
+
+section .what-is .back--elmnt {
+  text-align: right; }
+
+section .what-is .front--elmnt {
+  position: absolute;
+  top: -50px;
+  font-family: 'abrilfat';
+  text-align: center;
+  font-size: 50px;
+  left: -130px;
+  line-height: 45px; }
+
+section .how-is .front--elmnt {
+  position: absolute;
+  bottom: -30px;
+  font-family: 'abrilfat';
+  text-align: center;
+  font-size: 50px;
+  left: -40px;
+  line-height: 45px;
+  width: 450px; }
+
+section .start-typing .front--elmnt {
+  position: absolute;
+  bottom: -30px;
+  font-family: 'abrilfat';
+  text-align: center;
+  font-size: 50px;
+  right: -70px;
+  line-height: 45px;
+  width: 450px; }
+
+.back--elmnt {
+  font-family: 'Antraste';
+  color: #FFD101;
+  font-size: 110px;
+  line-height: 67px;
+  letter-spacing: 0px; }
+
+.g0 {
+  height: 250px;
+  width: 100%; }
+  .g0 .front--elmnt {
+    height: 220px; }
+
+.splitter {
+  display: block; }
+
+.center-center {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+
+.bottom-right {
+  right: 0;
+  bottom: 30px;
+  margin: auto; }
+
+.bottom-left {
+  left: 30px;
+  bottom: 80px;
+  margin: auto; }
+
+.center-left {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100px; }
+
+.center-right {
+  top: 0;
+  bottom: 0;
+  right: 60px;
+  margin: auto;
+  height: 100px; }
+
+.scroll-down {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: aparajbi;
+  font-size: 18px; }
+
+.group.what .front--elmnt {
+  font-family: aparajbi;
+  right: -40px;
+  position: absolute;
+  font-size: 22px;
+  bottom: -27px;
+  line-height: 23px;
+  max-width: 300px; }
+
+.img-container {
+  height: 40px;
+  position: relative; }
+  .img-container img {
+    height: 100%; }
+    .img-container img.center {
+      margin: auto; }
+
+.hand.img-container {
+  height: 120px; }
+
+.scroll-up-down {
+  position: absolute;
+  left: -50px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 150px; }
+  .scroll-up-down .img-container:last-child {
+    position: absolute;
+    bottom: 0; }
+
+.developers h2 {
+  font-family: 'Antraste';
+  color: #FFD101;
+  font-size: 70px;
+  line-height: 67px;
+  letter-spacing: 0px;
+  text-align: center; }
+  .developers h2 .creator-title {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 60px);
+    right: 0;
+    margin: auto;
+    font-family: 'abrilfat';
+    font-size: 40px;
+    color: #333333;
+    line-height: 30px;
+    height: 60px;
+    -webkit-transform: translate(30px, 10px);
+    transform: translate(30px, 10px);
+    text-align: left; }
+
+.developers .avatar-img {
+  margin-bottom: 20px; }
+
+.developers .personal-info {
+  text-align: center; }
+  .developers .personal-info .position {
+    font-size: 50px;
+    font-family: 'abrilfat';
+    color: #FFD101; }
+  .developers .personal-info .email {
+    font-family: aparaji;
+    border-radius: 0;
+    color: #333333;
+    border-color: #333333;
+    font-size: 20px;
+    padding: 10px 40px; }
+
+.developers .accounts li {
+  width: 40px;
+  height: 40px;
+  background: #353334;
+  border-radius: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 10px;
+  opacity: 1;
+  transition: all .3s;
+  border: 1px solid #333333; }
+  .developers .accounts li:hover {
+    background: white;
+    color: #333333; }
+    .developers .accounts li:hover a {
+      color: #333333; }
+  .developers .accounts li i {
+    vertical-align: middle; }
+  .developers .accounts li a {
+    text-decoration: none;
+    color: white; }
+
+.mt20 {
+  margin-top: 20px; }
+
 /*# sourceMappingURL=app.css.map */

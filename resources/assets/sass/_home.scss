@@ -1,5 +1,5 @@
-.navigator {
-  padding: 20px;
+.navigator.fixed {
+  padding: 10px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -20,7 +20,7 @@
 
 section {
   &.page--block {
-    min-height: 650px;
+    min-height: 700px;
     position: relative;
     height: 100%;
     padding: 30px 0px;
@@ -229,8 +229,14 @@ section {
       border-radius: 0;
       color: #333333;
       border-color: #333333;
-      font-size: 20px;
+      font-size: 16px;
+      line-height: 100%;
       padding: 10px 40px;
+
+      &:hover {
+        color: white;
+        background: #333333;
+      }
     }
   }
 
@@ -266,10 +272,4 @@ section {
     }
   }
 
-}
-
-
-
-.mt20 {
-  margin-top: 20px;
 }

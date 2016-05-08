@@ -9911,7 +9911,27 @@
 	      scrollTop: $(elmnt).offset().top
 	    }, delay || 600);
 	  },
-	}
+	  loadGoogleFonts : function(data) {
+	    WebFont.load({
+	      google: {
+	        families: data
+	      },
+	      classes: false,
+	      active: function() {
+	        $('head link').last().attr('id','imported-font');
+	      }
+	    });
+	  },
+	};
+
+
+	!function initialFonts() {
+	  $.get('api/v1/fonts/happy', function(data){
+	    var _data = JSON.parse(data);
+	    events.loadGoogleFonts(_data.fonts);
+	    $('.fonts-list ul').html(_data.mark_up);
+	  });
+	}();
 
 	$('body')
 	  .on('click', '.sub-menu li, .menu li', function(){
@@ -9941,8 +9961,8 @@
 	  __webpack_require__(4);
 
 	  function initFonts(data) {
+	    $('#imported-font').remove();
 	    var _data = JSON.parse(data);
-	    console.log(_data);
 	    WebFont.load({
 	      google: {
 	        families: _data
@@ -9950,9 +9970,9 @@
 	    });
 	  };
 
+
 	  $('body').on('click','.load-fonts', function() {
 	      var font = $('.fonts').val();
-	      $.get('/api/v1/fonts/'+font, initFonts);
 	  });
 
 	  var canvas = new fabric.Canvas('canvas');
@@ -9973,6 +9993,8 @@
 	  });
 
 	  $('body').on('click','.add-text', function() {
+	    $.get('/api/v1/fonts/sad', initFonts);
+
 	    var txt = $('.canvas-text').val();
 
 	    // canvas.setBackgroundColor('red', canvas.renderAll.bind(canvas));

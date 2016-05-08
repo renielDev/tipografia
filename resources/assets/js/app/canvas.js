@@ -2,8 +2,8 @@
   require('./../lib/colorpicker');
 
   function initFonts(data) {
+    $('#imported-font').remove();
     var _data = JSON.parse(data);
-    console.log(_data);
     WebFont.load({
       google: {
         families: _data
@@ -11,9 +11,9 @@
     });
   };
 
+
   $('body').on('click','.load-fonts', function() {
       var font = $('.fonts').val();
-      $.get('/api/v1/fonts/'+font, initFonts);
   });
 
   var canvas = new fabric.Canvas('canvas');
@@ -34,6 +34,8 @@
   });
 
   $('body').on('click','.add-text', function() {
+    $.get('/api/v1/fonts/sad', initFonts);
+
     var txt = $('.canvas-text').val();
 
     // canvas.setBackgroundColor('red', canvas.renderAll.bind(canvas));

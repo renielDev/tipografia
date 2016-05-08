@@ -5845,6 +5845,41 @@ button.close {
   font-family: aparaji;
   src: url(/assets/fonts/aparaji.ttf); }
 
+/* nav */
+@font-face {
+  font-family: "nav";
+  src: url("https://file.myfontastic.com/3gfzs8NFqDc3oXedTRm6pG/fonts/1460877282.eot");
+  src: url("https://file.myfontastic.com/3gfzs8NFqDc3oXedTRm6pG/fonts/1460877282.eot?#iefix") format("embedded-opentype"), url("https://file.myfontastic.com/3gfzs8NFqDc3oXedTRm6pG/fonts/1460877282.woff") format("woff"), url("https://file.myfontastic.com/3gfzs8NFqDc3oXedTRm6pG/fonts/1460877282.ttf") format("truetype"), url("https://file.myfontastic.com/3gfzs8NFqDc3oXedTRm6pG/fonts/1460877282.svg#1460877282") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[data-icon]:before {
+  font-family: "nav" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "nav" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-right-nav:before {
+  content: "\61"; }
+
 body {
   font-family: antraste; }
 
@@ -6126,23 +6161,23 @@ footer {
   font-size: 20px;
   line-height: 19px; }
 
-.navigator {
-  padding: 20px;
+.navigator.fixed {
+  padding: 10px;
   position: fixed;
   width: 100%;
   top: 0;
   text-align: right; }
-  .navigator span {
+  .navigator.fixed span {
     opacity: 1;
     transition: all .3s; }
-  .navigator span:hover {
+  .navigator.fixed span:hover {
     opacity: .8; }
 
 .pg-home {
   margin-top: 50px; }
 
 section.page--block {
-  min-height: 650px;
+  min-height: 700px;
   position: relative;
   height: 100%;
   padding: 30px 0px; }
@@ -6312,8 +6347,12 @@ section .start-typing .front--elmnt {
     border-radius: 0;
     color: #333333;
     border-color: #333333;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 100%;
     padding: 10px 40px; }
+    .developers .personal-info .email:hover {
+      color: white;
+      background: #333333; }
 
 .developers .accounts li {
   width: 40px;
@@ -6340,5 +6379,35 @@ section .start-typing .front--elmnt {
 
 .mt20 {
   margin-top: 20px; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mb10 {
+  margin-bottom: 10px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.mt30 {
+  margin-top: 30px; }
+
+.mb30 {
+  margin-bottom: 30px; }
+
+.mt40 {
+  margin-top: 40px; }
+
+.mb40 {
+  margin-bottom: 40px; }
+
+.mt50 {
+  margin-top: 50px; }
+
+.mb50 {
+  margin-bottom: 50px; }
 
 /*# sourceMappingURL=app.css.map */

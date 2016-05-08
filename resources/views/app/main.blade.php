@@ -1,6 +1,7 @@
 @extends('app')
 
 @section('header')
+  <div class="imported-font"></div>
   <div class="container">
     <header class="header">
       <div class="logo">
@@ -192,22 +193,6 @@
 
   <section class="fonts-list">
     <ul class="list-unstyled">
-      <li>
-        <div>
-          <span><strong>Clemente</strong> by  Allan Prescott</span>
-          <span>in <strong>Moods > Happy</strong></span>
-        </div>
-        <div>
-          <div class="row">
-            <span class="col-md-9">Clemente</span>
-            <span class="col-md-3 text-right">
-                <button type="button" name="button" class="btn btn-default">Download</button>
-                <button type="button" name="button" class="btn btn-default">Select</button>
-            </span>
-            <span class="clear-both"></span>
-          </div>
-        </div>
-      </li>
       <li>
         <div>
           <span><strong>Clemente</strong> by  Allan Prescott</span>

@@ -5,7 +5,27 @@ var events = {
       scrollTop: $(elmnt).offset().top
     }, delay || 600);
   },
-}
+  loadGoogleFonts : function(data) {
+    WebFont.load({
+      google: {
+        families: data
+      },
+      classes: false,
+      active: function() {
+        $('head link').last().attr('id','imported-font');
+      }
+    });
+  },
+};
+
+
+!function initialFonts() {
+  $.get('api/v1/fonts/happy', function(data){
+    var _data = JSON.parse(data);
+    events.loadGoogleFonts(_data.fonts);
+    $('.fonts-list ul').html(_data.mark_up);
+  });
+}();
 
 $('body')
   .on('click', '.sub-menu li, .menu li', function(){

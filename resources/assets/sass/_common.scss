@@ -1,0 +1,13 @@
+.mt20 {
+  margin-top: 20px;
+}
+
+$margins : 10, 20, 30, 40, 50;
+@each $mar in $margins {
+  .mt#{$mar} {
+    margin-top: #{$mar}px;
+  }
+  .mb#{$mar} {
+    margin-bottom: #{$mar}px;
+  }
+}

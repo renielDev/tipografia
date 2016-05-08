@@ -1,8 +1,8 @@
 @extends('app')
 
 @section('header')
- <div class="navigator">
-  <span class="fa fa-th-large fa-2x"></span>
+ <div class="navigator fixed">
+  <span class="icon-right-nav fa-3x"></span>
  </div>
 @stop
 
@@ -51,14 +51,6 @@
           Tipografia
         </span>
       </span>
-      <span class="scroll-up-down">
-          <div class="img-container">
-            <img src="{{ asset('assets/images/page/arrow-up.png') }}" class="img-responsive" alt="scroll-up arrow" />
-          </div>
-          <div class="img-container">
-            <img src="{{ asset('assets/images/page/arrow-down.png') }}" class="img-responsive" alt="scroll-down arrow" />
-          </div>
-      </span>
     </section>
     <section class="page--block">
       <div class="img-container hand text-center">
@@ -86,14 +78,6 @@
           Tipografia works?
         </span>
       </span>
-      <span class="scroll-up-down">
-          <div class="img-container">
-            <img src="{{ asset('assets/images/page/arrow-up.png') }}" class="img-responsive" alt="scroll-up arrow" />
-          </div>
-          <div class="img-container">
-            <img src="{{ asset('assets/images/page/arrow-down.png') }}" class="img-responsive" alt="scroll-down arrow" />
-          </div>
-      </span>
     </section>
     <section class="page--block">
       <div class="img-container hand text-center">
@@ -108,14 +92,6 @@
           <span class="splitter"></span>
           Typing.
         </span>
-      </span>
-      <span class="scroll-up-down">
-          <div class="img-container">
-            <img src="{{ asset('assets/images/page/arrow-up.png') }}" class="img-responsive" alt="scroll-up arrow" />
-          </div>
-          <div class="img-container">
-            <img src="{{ asset('assets/images/page/arrow-down.png') }}" class="img-responsive" alt="scroll-down arrow" />
-          </div>
       </span>
     </section>
     <section class="page--block developers">
@@ -134,65 +110,62 @@
         </div>
       </div>
       <div class="row mt20">
-        <div class="col-md-6">
-          <div class="col-md-10">
-            <div class="avatar-img">
-              <img src="{{ asset('assets/images/page/avatar.png') }}" alt="avatar-1" class="img-responsive" />
-            </div>
-            <div class="personal-info">
-              <div class="name">
-                Nicole Castaneda
+        <div class="col-md-10 col-md-offset-1">
+          <div class="col-md-5">
+            <div class="col-md-10">
+              <div class="avatar-img">
+                <img src="{{ asset('assets/images/page/avatar.png') }}" alt="avatar-1" class="img-responsive" />
               </div>
-              <p class="position">
-                designer.
-              </p>
-              <a href="#" class="btn btn-default email">
-                pnicolecastaneda@gmail.com
-              </a>
-            </div>
-          </div>
-          <div class="col-md-2">
-            <ul class="list-unstyled accounts">
-              <li><a href="#"><i class="fa fa-behance fa-2x" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-              <li><a href="#">www</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="col-md-10">
-            <div class="avatar-img">
-              <img src="{{ asset('assets/images/page/avatar.png') }}" alt="avatar-1" class="img-responsive" />
-            </div>
-            <div class="personal-info">
-              <div class="name">
-                Reniel Salvador
+              <div class="personal-info">
+                <div class="name">
+                  Nicole Castaneda
+                </div>
+                <p class="position">
+                  designer.
+                </p>
+                <a href="#" class="btn btn-default email">
+                  pnicolecastaneda@gmail.com
+                </a>
               </div>
-              <p class="position">
-                developer.
-              </p>
-              <a href="#" class="btn btn-default email">
-                reniel.salvador@gmail.com
-              </a>
+            </div>
+            <div class="col-md-2">
+              <ul class="list-unstyled accounts">
+                <li><a href="#"><i class="fa fa-behance fa-2x" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                <li><a href="#">www</a></li>
+              </ul>
             </div>
           </div>
-          <div class="col-md-2">
-            <ul class="list-unstyled accounts">
-              <li><a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-              <li><a href="#">www</a></li>
-            </ul>
+          <!-- space in between -->
+          <div class="col-md-2"></div>
+          <!-- space in between -->
+          <div class="col-md-5">
+            <div class="col-md-10">
+              <div class="avatar-img">
+                <img src="{{ asset('assets/images/page/avatar.png') }}" alt="avatar-1" class="img-responsive" />
+              </div>
+              <div class="personal-info">
+                <div class="name">
+                  Reniel Salvador
+                </div>
+                <p class="position">
+                  developer.
+                </p>
+                <a href="#" class="btn btn-default email">
+                  reniel.salvador@gmail.com
+                </a>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <ul class="list-unstyled accounts">
+                <li><a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+                <li><a href="#">www</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <span class="scroll-up-down">
-          <div class="img-container">
-            <img src="{{ asset('assets/images/page/arrow-up.png') }}" class="img-responsive" alt="scroll-up arrow" />
-          </div>
-          <div class="img-container">
-            <img src="{{ asset('assets/images/page/arrow-down.png') }}" class="img-responsive" alt="scroll-down arrow" />
-          </div>
-      </span>
     </section>
   @stop
 

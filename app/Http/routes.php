@@ -28,7 +28,7 @@ Route::group(['prefix' => 'api/v1'], function()
 {
 
 	Route::get('fonts/happy', function() {
-    $fonts = ['Droid Sans', 'Droid Serif', 'Lora'];
+    $fonts = ['Droid Sans', 'Droid Serif', 'Lora', 'Raleway'];
     $_html = view('app.main.font_list')->with([
       'fonts' => $fonts,
       'author' => 'Google web fonts',

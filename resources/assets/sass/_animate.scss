@@ -1,0 +1,20 @@
+* {
+  -o-transition: all .8s;
+  -moz-transition: all .8s;
+  -webkit-transition: all .8s; /* Safari */
+  transition: all .8s;
+}
+
+.pg-home {
+  & .g0.is-shown,
+  & .scroll-down.is-shown {
+    opacity: 1;
+    transition-delay: .5s;
+  }
+  & .scroll-down.is-shown {
+    transition-delay: .8s;
+  }
+  & .g0.is-shown {
+    transform: translate(0, 0);
+  }
+}

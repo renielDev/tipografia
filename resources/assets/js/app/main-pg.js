@@ -10,7 +10,7 @@ var events = {
       google: {
         families: data
       },
-      classes: false,
+      casses: false,
       active: function() {
         $('head link').last().attr('id','imported-font');
       }

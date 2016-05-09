@@ -1,0 +1,34 @@
+.font-type--modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  opacity: 0;
+  pointer-events: none;
+
+  &:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  & .cover {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #0A0909;
+    opacity: .9;
+  }
+
+  & section {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &.is-shown {
+    display: table;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+}

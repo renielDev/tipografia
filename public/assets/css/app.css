@@ -6173,11 +6173,8 @@ footer {
   .navigator.fixed span:hover {
     opacity: .8; }
 
-.pg-home {
-  margin-top: 50px; }
-
 section.page--block {
-  min-height: 700px;
+  min-height: 600px;
   position: relative;
   height: 100%;
   padding: 30px 0px; }
@@ -6233,7 +6230,10 @@ section .start-typing .front--elmnt {
 
 .g0 {
   height: 250px;
-  width: 100%; }
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translate(0, 40px);
+  transform: translate(0, 40px); }
   .g0 .front--elmnt {
     height: 220px; }
 
@@ -6274,6 +6274,7 @@ section .start-typing .front--elmnt {
   position: absolute;
   bottom: 0;
   width: 100%;
+  opacity: 0;
   text-align: center;
   font-family: aparajbi;
   font-size: 18px; }
@@ -6321,16 +6322,18 @@ section .start-typing .front--elmnt {
     z-index: 10;
     top: 0;
     bottom: 0;
-    left: calc(50% - 60px);
+    left: 0;
     right: 0;
+    text-align: left;
     margin: auto;
     font-family: 'abrilfat';
     font-size: 40px;
     color: #333333;
     line-height: 30px;
     height: 60px;
-    -webkit-transform: translate(30px, 10px);
-    transform: translate(30px, 10px);
+    width: 200px;
+    -webkit-transform: translate(70px, 10px);
+    transform: translate(70px, 10px);
     text-align: left; }
 
 .developers .avatar-img {
@@ -6409,5 +6412,53 @@ section .start-typing .front--elmnt {
 
 .mb50 {
   margin-bottom: 50px; }
+
+.mt60 {
+  margin-top: 60px; }
+
+.mb60 {
+  margin-bottom: 60px; }
+
+* {
+  /* Safari */
+  transition: all .8s; }
+
+.pg-home .g0.is-shown,
+.pg-home .scroll-down.is-shown {
+  opacity: 1;
+  transition-delay: .5s; }
+
+.pg-home .scroll-down.is-shown {
+  transition-delay: .8s; }
+
+.pg-home .g0.is-shown {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0); }
+
+.font-type--modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  opacity: 0;
+  pointer-events: none; }
+  .font-type--modal:target {
+    opacity: 1;
+    pointer-events: auto; }
+  .font-type--modal .cover {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #0A0909;
+    opacity: .9; }
+  .font-type--modal section {
+    display: table-cell;
+    vertical-align: middle; }
+  .font-type--modal.is-shown {
+    display: table;
+    height: 100%;
+    width: 100%;
+    opacity: 1; }
 
 /*# sourceMappingURL=app.css.map */

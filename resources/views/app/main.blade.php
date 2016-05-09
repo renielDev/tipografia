@@ -244,3 +244,5 @@
     </ul>
   </section>
 @stop
+
+@include('app.modal.font_type')

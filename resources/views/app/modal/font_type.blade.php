@@ -1,5 +1,7 @@
 <div class="font-type--modal">
+
   <span class="cover"></span>
+  <button type="button" name="button" class="btn btn-default btn-close">back</button>
   <section>
     <ul class="list-unstyled list-inline menu-list text-center">
       <li class="active" data-target="moods">

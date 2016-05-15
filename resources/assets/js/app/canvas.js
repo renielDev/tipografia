@@ -21,7 +21,7 @@
   window.addEventListener('resize', resizeCanvas, false);
 
   function resizeCanvas() {
-    canvas.setHeight(400);
+    canvas.setHeight(500);
     canvas.setWidth($('.container__canvas').width());
     canvas.renderAll();
   }
@@ -36,15 +36,19 @@
   $('body').on('click','.add-text', function() {
     $.get('/api/v1/fonts/sad', initFonts);
 
-    var txt = $('.canvas-text').val();
+    var txt = $('.canvas-text');
+    var fontFace = $('.canvas-font').val();
 
     // canvas.setBackgroundColor('red', canvas.renderAll.bind(canvas));
-    canvas.add(new fabric.IText(txt, {
-      fontFamily: txt,
+    canvas.add(new fabric.IText(txt.val(), {
+      fontFamily: fontFace,
       fill: $('.canvas__form .picker-color').val(),
       top : canvas.height / 4,
       left : canvas.width / 4,
     }));
+
+    txt.val('');
+    
   });
 
   $('.font-color-picker')

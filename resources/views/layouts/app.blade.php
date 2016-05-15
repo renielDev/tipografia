@@ -39,7 +39,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand tipografia" href="{{ url('/') }}">
                     Laravel
                 </a>
             </div>
@@ -71,7 +71,7 @@
             </div>
         </div>
     </nav>
-    
+
     @yield('content')
 
     <!-- JavaScripts -->

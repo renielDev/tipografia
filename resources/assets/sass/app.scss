@@ -2,9 +2,11 @@
 @import "./_fonts";
 @import "./_icons";
 @import "./_core";
-@import "./_home.scss";
-@import "./_common.scss";
-@import "./_animate.scss";
+@import "./_home";
+@import "./_common";
+@import "./_animate";
 
 
 @import "modal/_init";
+
+@import "./_override";

@@ -6183,6 +6183,11 @@ section.page--block {
   height: 100%;
   padding: 30px 0px; }
 
+section .animation {
+  width: 100%;
+  height: 300px;
+  margin-top: 160px; }
+
 section .group {
   position: absolute; }
 
@@ -6193,27 +6198,30 @@ section .tipografia .back--elmnt {
 section .tipografia .front--elmnt {
   position: absolute; }
 
-section .what-is .back--elmnt {
-  text-align: right; }
-
-section .what-is .front--elmnt {
+section .what-is {
   position: absolute;
-  top: -50px;
-  font-family: 'abrilfat';
-  text-align: center;
-  font-size: 50px;
-  left: -130px;
-  line-height: 45px; }
+  left: 50%;
+  top: 50px; }
+  section .what-is .back--elmnt {
+    text-align: right; }
+  section .what-is .front--elmnt {
+    position: absolute;
+    top: -50px;
+    font-family: 'abrilfat';
+    text-align: center;
+    font-size: 50px;
+    left: -130px;
+    line-height: 45px;
+    min-width: 100%; }
 
 section .how-is .front--elmnt {
-  position: absolute;
-  bottom: -30px;
-  font-family: 'abrilfat';
-  text-align: center;
-  font-size: 50px;
-  left: -40px;
-  line-height: 45px;
-  width: 450px; }
+  width: 450px;
+  right: -45px;
+  left: initial; }
+
+section .how-is .back--elmnt {
+  right: -70px;
+  position: relative; }
 
 section .start-typing .front--elmnt {
   position: absolute;
@@ -6221,9 +6229,21 @@ section .start-typing .front--elmnt {
   font-family: 'abrilfat';
   text-align: center;
   font-size: 50px;
-  right: -70px;
+  right: 20px;
   line-height: 45px;
-  width: 450px; }
+  width: 100%; }
+
+section .start-typing .back--elmnt {
+  left: -60px;
+  position: relative; }
+
+section .start-typing.group {
+  width: 100%;
+  height: 100%;
+  left: 0; }
+  section .start-typing.group .back--elmnt {
+    left: calc(50% - 100px);
+    top: calc(50% - 30px); }
 
 .back--elmnt {
   font-family: 'Antraste';
@@ -6283,14 +6303,17 @@ section .start-typing .front--elmnt {
   font-family: aparajbi;
   font-size: 18px; }
 
-.group.what .front--elmnt {
-  font-family: aparajbi;
-  right: -40px;
-  position: absolute;
-  font-size: 22px;
-  bottom: -27px;
-  line-height: 23px;
-  max-width: 300px; }
+.group.what {
+  right: calc(50% - (330px / 2 ));
+  top: calc(50% - (85px/2)); }
+  .group.what .front--elmnt {
+    font-family: aparajbi;
+    right: -40px;
+    position: absolute;
+    font-size: 22px;
+    bottom: -27px;
+    line-height: 23px;
+    max-width: 300px; }
 
 .img-container {
   height: 40px;
@@ -6489,5 +6512,17 @@ nav.navigator {
 .btn:focus,
 .btn:active:focus {
   outline: none; }
+
+.btn.btn-default {
+  border-radius: 0;
+  width: 200px;
+  height: 40px;
+  line-height: 30px;
+  background: #2D2A2B;
+  color: white;
+  border-color: #50494B; }
+  .btn.btn-default:hover {
+    background: none;
+    color: #50494B; }
 
 /*# sourceMappingURL=app.css.map */

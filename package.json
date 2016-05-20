@@ -14,6 +14,7 @@
     "bootstrap-sass": "^3.0.0",
     "jQuery": "^1.7.4",
     "jquery": "^2.2.2",
+    "jquery.transit": "^0.9.12",
     "laravel-elixir": "^5.0.0"
   }
 }

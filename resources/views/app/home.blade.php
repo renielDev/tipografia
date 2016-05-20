@@ -11,9 +11,9 @@
       <span class="group center-center g0 tipografia">
         <span class="back--elmnt">
           Tipo
-          <span class="splitter"></span>
+          <br />
           Gra
-          <span class="splitter"></span>
+          <br />
           Fia
         </span>
         <img src="{{ asset('assets/images/page/tipografia.png') }}" alt="Tipografia" class="front--elmnt img-responsive center-center" />
@@ -29,70 +29,90 @@
       <div class="img-container hand text-center">
         <img src="{{ asset('assets/images/page/hand-1.png') }}" class="img-responsive center" alt="Hand" />
       </div>
-      <span class="group what center-left">
-        <span class="back--elmnt">
-          what
+      <div class="col-md-6 fill-block">
+        <span class="what-is">
+          <span class="back--elmnt">
+            01
+          </span>
+          <span class="front--elmnt">
+            What is
+            <br />
+            Tipografia
+          </span>
         </span>
-        <span class="front--elmnt">
-          <p>
-            Tipografia is a web based type design
-            generator where users can yeah yeah na
-            na na lorem ipsum yes yes
-          </p>
+        <embed class="animation" src="{{ asset('assets/animation/1.swf') }}">
+      </div>
+      <div class="col-md-6 fill-block">
+        <span class="group what">
+          <span class="back--elmnt">
+            what
+          </span>
+          <span class="front--elmnt">
+            <p>
+              Tipografia is a web based type design
+              generator where users can yeah yeah na
+              na na lorem ipsum yes yes
+            </p>
+          </span>
         </span>
-      </span>
-      <span class="group what-is bottom-right">
-        <span class="back--elmnt">
-          01
-        </span>
-        <span class="front--elmnt">
-          What is
-          <span class="splitter"></span>
-          Tipografia
-        </span>
-      </span>
+      </div>
     </section>
     <section class="page--block">
       <div class="img-container hand text-center">
         <img src="{{ asset('assets/images/page/hand-2.png') }}" class="img-responsive center" alt="Hand" />
       </div>
-      <span class="group what center-right">
-        <span class="back--elmnt">
-          how
+      <div class="col-md-6 fill-block">
+        <span class="what-is how-is">
+          <span class="back--elmnt">
+            02
+          </span>
+          <span class="front--elmnt">
+            How does
+            <br />
+            Tipografia works?
+          </span>
         </span>
-        <span class="front--elmnt">
-          <p>
-            Lorem ipsum dolor sit amet, consectatur
-            adipiscing elit. Nazivehicula mi sit amet
-            erat convallis, id ornare ex retrum.
-          </p>
+        <embed class="animation" src="{{ asset('assets/animation/2.swf') }}">
+      </div>
+      <div class="col-md-6 fill-block">
+        <span class="group what">
+          <span class="back--elmnt">
+            how
+          </span>
+          <span class="front--elmnt">
+            <p>
+              Lorem ipsum dolor sit amet, consectatur
+              adipiscing elit. Nazivehicula mi sit amet
+              erat convallis, id ornare ex retrum.
+            </p>
+          </span>
         </span>
-      </span>
-      <span class="group how-is bottom-left">
-        <span class="back--elmnt">
-          02
-        </span>
-        <span class="front--elmnt">
-          How does
-          <span class="splitter"></span>
-          Tipografia works?
-        </span>
-      </span>
+      </div>
     </section>
     <section class="page--block">
       <div class="img-container hand text-center">
         <img src="{{ asset('assets/images/page/hand-3.png') }}" class="img-responsive center" alt="Hand" />
       </div>
-      <span class="group start-typing center-right">
-        <span class="back--elmnt">
-          03
+      <div class="col-md-6 fill-block">
+        <span class="what-is start-typing">
+          <span class="back--elmnt">
+            03
+          </span>
+          <span class="front--elmnt">
+            Start
+            <br />
+            Typing.
+          </span>
         </span>
-        <span class="front--elmnt">
-          Start
-          <span class="splitter"></span>
-          Typing.
+        <embed class="animation" src="{{ asset('assets/animation/3.swf') }}">
+      </div>
+      <div class="col-md-6 fill-block">
+        <span class="group what-is start-typing">
+          <span class="back--elmnt">
+            <a href="#" class="btn btn-default">Type now</a>
+          </span>
         </span>
-      </span>
+      </div>
     </section>
     <section class="page--block developers">
       <div class="row">

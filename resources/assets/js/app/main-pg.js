@@ -29,6 +29,8 @@ var events = {
   });
 }();
 
+$('.fill-block').css('height', 'calc( 100% - 120px )');
+
 $('body')
   .on('click', '.sub-menu li, .menu li', function(){
     $(this)

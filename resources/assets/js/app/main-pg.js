@@ -61,4 +61,14 @@ $('body')
     events.scroll('.container__canvas');
   });
 
+// add animation sections 1-3
+$.each([1,2,3], function(k, v){
+  $('.section0'+v+' .hand').AnimateScroll({'animation':'none'});
+  $('.section0'+v+' .what-is').AnimateScroll();
+  $('.section0'+v+' .animation').AnimateScroll({'delay' : .3, 'animation' : 'slide-left'});
+  $('.section0'+v+' .group').AnimateScroll({
+    'animation' : 'slide-up',
+    'delay' : .3});
+});
+
 module.exports = events;

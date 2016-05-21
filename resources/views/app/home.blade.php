@@ -25,7 +25,7 @@
           </div>
       </span>
     </section>
-    <section class="page--block">
+    <section class="page--block section01">
       <div class="img-container hand text-center">
         <img src="{{ asset('assets/images/page/hand-1.png') }}" class="img-responsive center" alt="Hand" />
       </div>
@@ -57,7 +57,7 @@
         </span>
       </div>
     </section>
-    <section class="page--block">
+    <section class="page--block section02">
       <div class="img-container hand text-center">
         <img src="{{ asset('assets/images/page/hand-2.png') }}" class="img-responsive center" alt="Hand" />
       </div>
@@ -89,7 +89,7 @@
         </span>
       </div>
     </section>
-    <section class="page--block">
+    <section class="page--block section03">
       <div class="img-container hand text-center">
         <img src="{{ asset('assets/images/page/hand-3.png') }}" class="img-responsive center" alt="Hand" />
       </div>

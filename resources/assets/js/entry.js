@@ -1,4 +1,5 @@
 window.jQuery = window.$ = require('jquery');
+require('./app/scrollanimate');
 
 $(function(){
   var main = require('./app/main-pg');
